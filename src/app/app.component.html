@@ -1,0 +1,76 @@
+<div>
+  <h3>Basic Use</h3>
+  <tri-date-picker (change)="onChange($event)"></tri-date-picker>
+  <hr />
+  <h3>Pre Selected Year</h3>
+  <tri-date-picker (change)="onChange($event)" [year]="2010"></tri-date-picker>
+  <hr />
+  <h3>Pre Selected Month</h3>
+  <tri-date-picker (change)="onChange($event)" [month]="3"></tri-date-picker>
+  <hr />
+  <h3>Pre Selected Year and Month</h3>
+  <tri-date-picker
+    (change)="onChange($event)"
+    [year]="2010"
+    [month]="3"
+  ></tri-date-picker>
+  <hr />
+  <h3>Enabled Months</h3>
+  <tri-date-picker
+    (change)="onChange($event)"
+    [enabledMonths]="[5, 9, 11]"
+  ></tri-date-picker>
+  <hr />
+  <h3>Disabled Months</h3>
+  <tri-date-picker
+    (change)="onChange($event)"
+    [disabledMonths]="[2, 9, 11]"
+  ></tri-date-picker>
+  <hr />
+  <h3>enabled Years</h3>
+
+  <tri-date-picker
+    (change)="onChange($event)"
+    [enabledYears]="[2019, 2021, 2022]"
+  ></tri-date-picker>
+  <hr />
+  <h3>Disabled Years</h3>
+
+  <tri-date-picker
+    (change)="onChange($event)"
+    [disabledYears]="[2019, 2020, 2021]"
+  ></tri-date-picker>
+  <hr />
+  <h3>enabled Dates</h3>
+
+  <tri-date-picker
+    (change)="onChange($event)"
+    [enabledDates]="[1, 2, 21]"
+  ></tri-date-picker>
+  <hr />
+  <h3>Disabled Dates</h3>
+
+  <tri-date-picker
+    (change)="onChange($event)"
+    [disabledDates]="[1, 2, 21]"
+  ></tri-date-picker>
+  <hr />
+  <h3>Month Only</h3>
+
+  <tri-date-picker
+    (change)="onChange($event)"
+    [type]="'MONTH'"
+  ></tri-date-picker>
+  <hr />
+  <h3>Year Only</h3>
+  <tri-date-picker
+    (change)="onChange($event)"
+    [type]="'YEAR'"
+  ></tri-date-picker>
+  <hr />
+  <h3>Date Only</h3>
+  <tri-date-picker
+    (change)="onChange($event)"
+    [type]="'DATE'"
+  ></tri-date-picker>
+</div>
